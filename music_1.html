@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+
+    <!-- Font Awesome Free CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="music_2.css" />
+</head>
+
+<body>
+    <div class="themes" id="themes">
+        <div class="theme theme1 active-theme" data-theme="theme1" title="Classic"></div>
+        <div class="theme theme2" data-theme="theme2" title="Crimson-Teal"></div>
+        <div class="theme theme3" data-theme="theme3" title="Purple-Blue"></div>
+        <div class="theme theme4" data-theme="theme4" title="Sunset"></div>
+        <div class="theme theme5" data-theme="theme5" title="Mint"></div>
+        <div class="theme theme6" data-theme="theme6" title="Dark Gold"></div>
+    </div>
+
+    <div class="blur-element" id="blurElement"></div>
+
+    <div class="music-box" id="musicBox">
+        <div class="music-top-row">
+            <div class="music-cover-list">
+                <div class="cover-image-wrapper">
+                    <img src="image_3.jpeg" alt="Cover" class="cover-image" id="coverImage">
+                </div>
+                <div class="track-name" id="trackName">Zehen</div>
+                <div class="track-items-wrapper queue" id="trackItemsWrapper"></div>
+            </div>
+           
+        </div>
+
+        <div class="track-progress">
+            <div class="track-time" id="currentTrackTimeNumber">0:00</div>
+            <div class="track-progress-bar" id="trackProgressBar">
+                <div id="trackLoading"></div>
+                <div class="track-current-time-progress-bar" id="currentTrackTimeBar"></div>
+            </div>
+            <div class="track-time" id="currentTrackDuration">0:00</div>
+        </div>
+
+        <div class="player-controls-row">
+            <button class="player-btn" id="previousButton" title="Previous">
+                <i class="fa-solid fa-backward"></i>
+            </button>
+
+            <button class="player-btn" id="playButton" title="Play/Pause">
+                <i class="fa-solid fa-play" id="playIcon"></i>
+                <i class="fa-solid fa-pause" id="pauseIcon" style="display:none;"></i>
+            </button>
+
+            <button class="player-btn" id="nextButton" title="Next">
+                <i class="fa-solid fa-forward"></i>
+            </button>
+
+            <button class="player-btn volume-btn" id="volumeWrapper" title="Sound">
+                <i class="fa-solid fa-volume-high" id="volumeIcon"></i>
+
+            </button>
+        </div>
+    </div>
+
+    <!-- External JS -->
+    <script src="music3_js"></script>
+</body>
+</html>
